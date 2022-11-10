@@ -11,23 +11,16 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 
-public class MenuController {
+public class RezerfordController {
 
     @FXML
-    protected void onExitButtonActionClick(ActionEvent event) {
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.close();
-    }
-
-    @FXML
-    protected void onRezerfordButtonClick(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("fxml/rezerford.fxml");
+    protected void getToMainWindow(ActionEvent event) throws IOException {
+        URL resource = MenuController.class.getResource("fxml/menu.fxml");
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         Parent root1 = fxmlLoader.load();
-        stage.setTitle("Резерфорд");
+        stage.setTitle("Меню");
         stage.setScene(new Scene(root1));
         stage.show();
     }
-
 }

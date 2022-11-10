@@ -5,4 +5,6 @@ module com.tgc.rezerford {
 
     opens com.tgc.rezerford to javafx.fxml;
     exports com.tgc.rezerford;
+    exports com.tgc.rezerford.controller;
+    opens com.tgc.rezerford.controller to javafx.fxml;
 }
