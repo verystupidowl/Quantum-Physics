@@ -1,13 +1,11 @@
 .root{
-    -fx-background-color: #222;
-    -fx-background-radius: 28;
+    -fx-background-color: #1d1d1d;
 }
 
 .button{
-    -fx-background-color: #d58300;
-    -fx-background-radius: 15;
+    -fx-background-color: #1D766F;
 }
 
 .pane{
-    -fx-background-color: #222;
+    -fx-background-color: #1d1d1d;
 }

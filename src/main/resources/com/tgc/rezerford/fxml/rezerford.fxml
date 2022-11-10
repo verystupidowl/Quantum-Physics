@@ -3,43 +3,47 @@
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tgc.rezerford.RezerfordController">
-    <VBox layoutX="20.0" layoutY="20.0" prefHeight="680" prefWidth="510" spacing="20.0" styleClass="button" stylesheets="@../view/WindowStyle.css">
+<?import javafx.scene.text.Font?>
+<AnchorPane style="-fx-background-color: #1d1d1d" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.tgc.rezerford.RezerfordController">
+    <VBox layoutX="20.0" layoutY="20.0" prefHeight="680" prefWidth="510" spacing="20.0" styleClass="button"
+          stylesheets="@../view/WindowStyle.css">
         <TableView prefHeight="542.5" prefWidth="490" styleClass="pane" stylesheets="@../view/WindowStyle.css">
             <columns>
-                <TableColumn prefWidth="245.0" styleClass="pane" text="b,10^(-12)cm" />
-                <TableColumn prefWidth="248.0" styleClass="pane" text="°, град." />
+                <TableColumn prefWidth="245.0" styleClass="pane" text="b,10^(-12)cm"/>
+                <TableColumn prefWidth="248.0" styleClass="pane" text="°, град."/>
             </columns>
         </TableView>
         <HBox alignment="CENTER" prefHeight="77.5" prefWidth="200.0" spacing="20.0" styleClass="root">
-            <Button prefHeight="57.5" prefWidth="140.0" stylesheets="@../view/Buttons.css" />
-            <Button prefHeight="57.5" prefWidth="140.0" stylesheets="@../view/Buttons.css" />
-            <Button prefHeight="57.5" prefWidth="140.0" stylesheets="@../view/Buttons.css" />
+            <Button prefHeight="57.5" prefWidth="140.0" stylesheets="@../view/Buttons.css"/>
+            <Button prefHeight="57.5" prefWidth="140.0" stylesheets="@../view/Buttons.css"/>
+            <Button prefHeight="57.5" prefWidth="140.0" stylesheets="@../view/Buttons.css"/>
         </HBox>
     </VBox>
-    <VBox layoutX="550.0" layoutY="20.0" prefHeight="680.0" prefWidth="510" spacing="20.0" styleClass="button" stylesheets="@../view/WindowStyle.css">
-        <LineChart prefHeight="260.0" prefWidth="490">
+    <VBox layoutX="550.0" layoutY="20.0" prefHeight="680.0" prefWidth="510" spacing="20.0" styleClass="button"
+          stylesheets="@../view/WindowStyle.css">
+        <LineChart style="-fx-background-color: #1d1d1d" prefHeight="260.0" prefWidth="490">
             <xAxis>
-                <CategoryAxis side="BOTTOM" />
+                <CategoryAxis side="BOTTOM"/>
             </xAxis>
             <yAxis>
-                <NumberAxis side="LEFT" />
+                <NumberAxis side="LEFT"/>
             </yAxis>
         </LineChart>
-        <LineChart prefHeight="260.0" prefWidth="490">
+        <LineChart style="-fx-background-color: #1d1d1d" prefHeight="260.0" prefWidth="490">
             <xAxis>
-                <CategoryAxis side="BOTTOM" />
+                <CategoryAxis side="BOTTOM"/>
             </xAxis>
             <yAxis>
-                <NumberAxis side="LEFT" />
+                <NumberAxis side="LEFT"/>
             </yAxis>
         </LineChart>
         <Pane prefHeight="77.5" prefWidth="200" styleClass="root">
-            <Button stylesheets="@../view/Buttons.css" layoutX="338.0" layoutY="12.0" mnemonicParsing="false" onAction="#getToMainWindow" prefHeight="54.0" prefWidth="133.0" text="В меню">
+            <Button stylesheets="@../view/Buttons.css" layoutX="338.0" layoutY="12.0" mnemonicParsing="false"
+                    onAction="#getToMainWindow" prefHeight="54.0" prefWidth="133.0" text="В меню">
                 <font>
-                    <Font name="System Bold" size="16.0" />
+                    <Font name="System Bold" size="16.0"/>
                 </font>
             </Button>
         </Pane>
